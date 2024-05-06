@@ -1,6 +1,7 @@
 # XRPL - EVM SIDECHAIN
 
 > Discovering the XRPL sidechain evm during 2 days of training offered by [XRPL-Commons](https://www.xrpl-commons.org/).
+> _See also [xrpl-training](https://github.com/ibourn/xrpl-training)._
 
 ## Presentation
 
