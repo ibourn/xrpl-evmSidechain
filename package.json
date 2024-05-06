@@ -1,0 +1,29 @@
+{
+  "name": "xrpl-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy-token": "hardhat run ./script/01_deployToken.ts --network evmSidechain",
+    "buy-token": "hardhat run ./script/02_buyToken.ts --network evmSidechain",
+    "deploy-voting": "hardhat run ./script/03_deploy-voting.ts --network evmSidechain",
+    "create-proposal": "hardhat run ./script/04_create-proposal.ts --network evmSidechain",
+    "vote-yes": "hardhat run ./script/05_voteYes-proposal.ts --network evmSidechain",
+    "vote-no": "hardhat run ./script/06_voteNo-proposal.ts --network evmSidechain",
+    "flatten": "hardhat flatten > Flattened.sol",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.2"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
